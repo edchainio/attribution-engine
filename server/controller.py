@@ -14,4 +14,4 @@ def get_content_addresses_by_course_number(course_number):
         return document[0]['hash']
 
 if __name__ == '__main__':
-    api.run(host='127.0.0.1', port=5000, debug=True)
+    api.run(host='0.0.0.0', port=5000, debug=True)
