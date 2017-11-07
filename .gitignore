@@ -1,4 +1,4 @@
 venv/
 __pycache__/
-server/setup.sh
+setup.sh
 .credentials
