@@ -1,5 +1,15 @@
 # A Prototype of an Attribution Engine for edChain
 
-Install autoenv
+## Getting Started
 
-the client is really just a stand-in to emulate the functionality of the electron app (client-gui)
+### Installation
+
+### Configuration
+
+## Roadmap
+
+### Current State
+
+### Desired End State
+
+### Achievable End State
