@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from core import controller
+from core import omnibus
 
 
-controller.run(host='0.0.0.0', port=5000)
+omnibus.run(host='0.0.0.0', port=5000)
