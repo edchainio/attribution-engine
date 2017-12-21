@@ -2,7 +2,9 @@
 
 import json
 import os
+import random
 import sys
+import time
 
 from flask import Flask, jsonify, render_template, request
 
@@ -29,7 +31,7 @@ def authenticate():
     if request.method == 'GET':
         return render_template('authenticate.html')
     else:
-        pass # TODO
+        pass           # TODO
 
 @authorize
 @controller.route('/download', methods=['GET', 'POST'])
@@ -56,7 +58,7 @@ def edchain():
 
 @controller.route('/edchain/books', methods=['GET'])
 def edchain_books():
-    pass # FIXME - Return a JSON object for every book, on edChain
+    pass # TODO - Return a JSON object for every book, on edChain
 
 @controller.route('/edchain/courses', methods=['GET'])
 def edchain_courses():
@@ -64,77 +66,77 @@ def edchain_courses():
 
 @controller.route('/edchain/screencasts', methods=['GET'])
 def edchain_screencasts():
-    pass # FIXME - Return a JSON object for every screencast, on edChain
+    pass # TODO - Return a JSON object for every screencast, on edChain
 
 @controller.route('/edchain/featured/books', methods=['GET'])
 def edchain_featured_books():
-    pass # FIXME - Return a JSON object for every featured book, on edChain
+    pass # TODO - Return a JSON object for every featured book, on edChain
 
 @controller.route('/edchain/featured/courses', methods=['GET'])
 def edchain_featured_courses():
-    pass # FIXME - Return a JSON object for every featured course, on edChain
+    pass # TODO - Return a JSON object for every featured course, on edChain
 
 @controller.route('/edchain/featured/screencasts', methods=['GET'])
 def edchain_featured_screencasts():
-    pass # FIXME - Return a JSON object for every featured screencast, on edChain
+    pass # TODO - Return a JSON object for every featured screencast, on edChain
 
 @controller.route('/edchain/newest/books', methods=['POST'])
 def edchain_newest_books():
-    pass # FIXME - Return a JSON object for the n most recently published books, on edChain; where: n is a natural number
+    pass # TODO - Return a JSON object for the n most recently published books, on edChain; where: n is a natural number
 
 @controller.route('/edchain/newest/courses', methods=['POST'])
 def edchain_newest_courses():
-    pass # FIXME - Return a JSON object for the n most recently published courses, on edChain; where: n is a natural number
+    pass # TODO - Return a JSON object for the n most recently published courses, on edChain; where: n is a natural number
 
 @controller.route('/edchain/newest/screencasts', methods=['POST'])
 def edchain_newest_screencasts():
-    pass # FIXME - Return a JSON object for the n most recently published screencasts, on edChain; where: n is a natural number
+    pass # TODO - Return a JSON object for the n most recently published screencasts, on edChain; where: n is a natural number
 
 @controller.route('/edchain/trending/books', methods=['POST'])
 def edchain_trending_books():
-    pass # FIXME - Return a JSON object for the n highest rated books over t, on edChain; where: n is a natural number and t is a time period
+    pass # TODO - Return a JSON object for the n highest rated books over t, on edChain; where: n is a natural number and t is a time period
 
 @controller.route('/edchain/trending/courses', methods=['POST'])
 def edchain_trending_courses():
-    pass # FIXME - Return a JSON object for the n highest rated courses over t, on edChain; where: n is a natural number and t is a time period
+    pass # TODO - Return a JSON object for the n highest rated courses over t, on edChain; where: n is a natural number and t is a time period
 
 @controller.route('/edchain/trending/screencasts', methods=['POST'])
 def edchain_trending_screencasts():
-    pass # FIXME - Return a JSON object for the n highest rated courses over t, on edChain; where: n is a natural number and t is a time period
+    pass # TODO - Return a JSON object for the n highest rated courses over t, on edChain; where: n is a natural number and t is a time period
 
 
 # Routes for users in local scopes
 
-from core.endpoints.group.institution.duke     import handler as duke    
-from core.endpoints.group.institution.harvard  import handler as harvard 
-from core.endpoints.group.institution.mit      import handler as mit     
-from core.endpoints.group.institution.oxford   import handler as oxford  
-from core.endpoints.group.institution.stanford import handler as stanford
-from core.endpoints.group.institution.yale     import handler as yale    
-from core.endpoints.group.endeavor.byte        import handler as byte    
-from core.endpoints.group.endeavor.coursera    import handler as coursera
-from core.endpoints.group.endeavor.edx         import handler as edx     
-from core.endpoints.group.endeavor.lynda       import handler as lynda   
-from core.endpoints.group.endeavor.udacity     import handler as udacity 
-from core.endpoints.group.endeavor.udemy       import handler as udemy   
-from core.endpoints.individual.example         import handler as example
+# from core.endpoints.group.institution.duke     import handler as duke     # TODO
+# from core.endpoints.group.institution.harvard  import handler as harvard  # TODO
+from core.endpoints.group.institution.mit      import handler as mit
+# from core.endpoints.group.institution.oxford   import handler as oxford   # TODO
+# from core.endpoints.group.institution.stanford import handler as stanford # TODO
+# from core.endpoints.group.institution.yale     import handler as yale     # TODO
+# from core.endpoints.group.endeavor.byte        import handler as byte     # TODO
+# from core.endpoints.group.endeavor.coursera    import handler as coursera # TODO
+# from core.endpoints.group.endeavor.edx         import handler as edx      # TODO
+# from core.endpoints.group.endeavor.lynda       import handler as lynda    # TODO
+# from core.endpoints.group.endeavor.udacity     import handler as udacity  # TODO
+# from core.endpoints.group.endeavor.udemy       import handler as udemy    # TODO
+# from core.endpoints.individual.example         import handler as example  # TODO
 
-controller.register_blueprint(duke)    
-controller.register_blueprint(harvard) 
-controller.register_blueprint(mit)     
-controller.register_blueprint(oxford)  
-controller.register_blueprint(stanford)
-controller.register_blueprint(yale)    
-controller.register_blueprint(byte)    
-controller.register_blueprint(coursera)
-controller.register_blueprint(edx)     
-controller.register_blueprint(lynda)   
-controller.register_blueprint(udacity) 
-controller.register_blueprint(udemy)   
-controller.register_blueprint(example) 
+# controller.register_blueprint(duke)     # TODO
+# controller.register_blueprint(harvard)  # TODO
+controller.register_blueprint(mit)
+# controller.register_blueprint(oxford)   # TODO
+# controller.register_blueprint(stanford) # TODO
+# controller.register_blueprint(yale)     # TODO
+# controller.register_blueprint(byte)     # TODO
+# controller.register_blueprint(coursera) # TODO
+# controller.register_blueprint(edx)      # TODO
+# controller.register_blueprint(lynda)    # TODO
+# controller.register_blueprint(udacity)  # TODO
+# controller.register_blueprint(udemy)    # TODO
+# controller.register_blueprint(example)  # TODO
 
 
-# Handlers for HTTP status codes in the 4XX error space 
+# Error handlers for HTTP status codes in the 4XX error-space 
 
 @controller.errorhandler(400)
 def bad_request(error):
@@ -249,7 +251,7 @@ def unavailable_for_legal_reasons(error):
     return make_response(jsonify({'error': "HTTP status code: 451"}), 451)
 
 
-# Handlers for HTTP status codes in an unofficial expansion of the 4XX error space 
+# Error handlers for HTTP status codes in an unofficial expansion of the 4XX error-space 
 
 @controller.errorhandler(444)
 def no_response(error):
@@ -272,7 +274,7 @@ def client_closed_request(error):
     return make_response(jsonify({'error': "Unofficial HTTP status code from Nginx: 499"}), 499)
 
 
-# Handlers for HTTP status codes in the 5XX error space 
+# Error handlers for HTTP status codes in the 5XX error-space 
 
 @controller.errorhandler(500)
 def internal_server_error(error):
