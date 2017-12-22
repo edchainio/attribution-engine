@@ -45,7 +45,7 @@ bus = Blueprint('controller', __name__, url_prefix="/edchain/course")
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # ##
 
 
-@bus.route('/mit', methods=['POST'])
+@bus.route('/mit', methods=['GET'])
 def mit():
 
 	# Query-string parameters:
@@ -56,5 +56,13 @@ def mit():
 	# - publication date
 	# - subject matter
 	# - unique identifier
+
+    content_address   = request.args.get('content_address')
+    copyright_holder  = request.args.get('copyright_holder')
+    course_title      = request.args.get('course_title')
+    instructor_name   = request.args.get('instructor_name')
+    publication_date  = request.args.get('publication_date')
+    subject_matter    = request.args.get('subject_matter')
+    unique_identifier = request.args.get('unique_identifier')
 
     pass # FIXME - Return all JSON objects, by MIT, on edChain
