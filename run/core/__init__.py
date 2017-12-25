@@ -112,7 +112,7 @@ from core.controllers.courses import bus as courses
 omnibus.register_blueprint(courses)
 
 
-# Error handlers for HTTP status codes in the 4XX error-space 
+# Error handlers for HTTP status codes in the 4XX error-space
 
 @omnibus.errorhandler(400)
 def bad_request(error):
@@ -227,7 +227,7 @@ def unavailable_for_legal_reasons(error):
     return make_response(jsonify({'error': "HTTP status code: 451"}), 451)
 
 
-# Error handlers for HTTP status codes in an unofficial expansion of the 4XX error-space 
+# Error handlers for HTTP status codes in an unofficial expansion of the 4XX error-space
 
 @omnibus.errorhandler(444)
 def no_response(error):
@@ -250,7 +250,7 @@ def client_closed_request(error):
     return make_response(jsonify({'error': "Unofficial HTTP status code from Nginx: 499"}), 499)
 
 
-# Error handlers for HTTP status codes in the 5XX error-space 
+# Error handlers for HTTP status codes in the 5XX error-space
 
 @omnibus.errorhandler(500)
 def internal_server_error(error):
