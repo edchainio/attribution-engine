@@ -11,9 +11,9 @@ from flask import(
                     render_template,
                     request)
 
-from core.extend           import authorize
+from core.extend            import authorize
 from core.engines.resources import controller as resources
-from core.engines.courses  import controller as courses
+from core.engines.courses   import controller as courses
 
 
 omnibus = Flask(__name__)
