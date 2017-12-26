@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import csv
 import json
 import random
 import time
@@ -48,14 +49,7 @@ controller = Blueprint('controller', __name__, url_prefix="/edchain/course")
 @controller.route('/mit', methods=['GET'])
 def mit():
 
-	# Query-string parameters:
-	# - content address
-	# - copyright holder
-	# - course title
-	# - instructor name
-	# - publication date
-	# - subject matter
-	# - unique identifier
+    # pass # FIXME - Return all JSON objects, by MIT, on edChain
 
     content_address   = request.args.get('content_address')
     copyright_holder  = request.args.get('copyright_holder')
@@ -65,4 +59,10 @@ def mit():
     subject_matter    = request.args.get('subject_matter')
     unique_identifier = request.args.get('unique_identifier')
 
-    pass # FIXME - Return all JSON objects, by MIT, on edChain
+    with open('datastore/mit.json', 'r') as file:
+        rows = json.load(file)['courses']
+        for row in rows:
+            if content_address == row['content_address']:
+                return jsonify(row)
+            else:
+                pass
