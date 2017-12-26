@@ -4,13 +4,8 @@ import json
 
 from flask import(
                     Blueprint,
-                    Flask,
                     jsonify,
-                    redirect,
-                    render_template,
-                    request,
-                    session,
-                    url_for)
+                    request)
 
 
 controller = Blueprint('courses', __name__, url_prefix="/edchain/courses")
@@ -22,7 +17,7 @@ def get_courses():
         if request.method == 'GET':
             payload = request.args
         else:
-            payload = request.get_json()
+            payload = request.get_json(silent=True)
         if len(payload) < 1:
             return jsonify(courses)
         else:
