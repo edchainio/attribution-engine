@@ -107,9 +107,9 @@ def edchain_trending_screencasts():
 
 # Blueprints for queries
 
-from core.controllers.courses import bus as courses
+from core.controllers.courses import controller as course
 
-omnibus.register_blueprint(courses)
+omnibus.register_blueprint(course)
 
 
 # Error handlers for HTTP status codes in the 4XX error-space
