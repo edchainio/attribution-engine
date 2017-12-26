@@ -3,15 +3,22 @@
 import json
 import os
 import random
-import sys
 import time
 
-from flask import Flask, jsonify, render_template, request
+from flask import(
+                    Flask,
+                    jsonify,
+                    render_template,
+                    request)
 
-from core.extend import authorize
+from core.extend          import authorize
+from core.engines.content import controller as content
+from core.engines.courses import controller as courses
 
 
 omnibus = Flask(__name__)
+omnibus.register_blueprint(content)
+omnibus.register_blueprint(courses)
 
 def keymaker(broad, filename='secret_key'):
     filename = os.path.join(omnibus.instance_path, filename)
@@ -25,14 +32,15 @@ def keymaker(broad, filename='secret_key'):
 
 keymaker(omnibus)
 
-# Routes for requests related to the node
+
+# Routes for requests related to the node's graphical user interface
 
 @omnibus.route('/', methods=['GET', 'POST'])
 def authenticate():
     if request.method == 'GET':
         return render_template('authenticate.html')
     else:
-        pass # TODO
+        pass # TODO - Write logic to evaluate the username and password.
 
 @authorize
 @omnibus.route('/download', methods=['GET', 'POST'])
@@ -40,77 +48,16 @@ def download():
     if request.method == 'GET':
         return render_template('download.html')
     else:
-        pass # TODO
+        pass # TODO - Write logic to process the download.
 
 @authorize
 @omnibus.route('/upload', methods=['GET', 'POST'])
 def upload():
     if request.method == 'GET':
         return render_template('upload.html')
-    else:
-        pass # TODO
-
-
-# Routes for requests related to the network
-
-@omnibus.route('/edchain', methods=['GET'])
-def edchain():
-    pass # FIXME - Return all JSON objects, on edChain
-
-@omnibus.route('/edchain/books', methods=['GET'])
-def edchain_books():
-    pass # TODO - Return a JSON object for every book, on edChain
-
-@omnibus.route('/edchain/courses', methods=['GET'])
-def edchain_courses():
-    pass # FIXME - Return a JSON object for every course, on edChain
-
-@omnibus.route('/edchain/screencasts', methods=['GET'])
-def edchain_screencasts():
-    pass # TODO - Return a JSON object for every screencast, on edChain
-
-@omnibus.route('/edchain/featured/books', methods=['GET'])
-def edchain_featured_books():
-    pass # TODO - Return a JSON object for every featured book, on edChain
-
-@omnibus.route('/edchain/featured/courses', methods=['GET'])
-def edchain_featured_courses():
-    pass # TODO - Return a JSON object for every featured course, on edChain
-
-@omnibus.route('/edchain/featured/screencasts', methods=['GET'])
-def edchain_featured_screencasts():
-    pass # TODO - Return a JSON object for every featured screencast, on edChain
-
-@omnibus.route('/edchain/newest/books', methods=['POST'])
-def edchain_newest_books():
-    pass # TODO - Return a JSON object for the n most recently published books, on edChain; where: n is a natural number
-
-@omnibus.route('/edchain/newest/courses', methods=['POST'])
-def edchain_newest_courses():
-    pass # TODO - Return a JSON object for the n most recently published courses, on edChain; where: n is a natural number
-
-@omnibus.route('/edchain/newest/screencasts', methods=['POST'])
-def edchain_newest_screencasts():
-    pass # TODO - Return a JSON object for the n most recently published screencasts, on edChain; where: n is a natural number
-
-@omnibus.route('/edchain/trending/books', methods=['POST'])
-def edchain_trending_books():
-    pass # TODO - Return a JSON object for the n highest rated books over t, on edChain; where: n is a natural number and t is a time period
-
-@omnibus.route('/edchain/trending/courses', methods=['POST'])
-def edchain_trending_courses():
-    pass # TODO - Return a JSON object for the n highest rated courses over t, on edChain; where: n is a natural number and t is a time period
-
-@omnibus.route('/edchain/trending/screencasts', methods=['POST'])
-def edchain_trending_screencasts():
-    pass # TODO - Return a JSON object for the n highest rated courses over t, on edChain; where: n is a natural number and t is a time period
-
-
-# Blueprints for queries
-
-from core.controllers.courses import controller as course
-
-omnibus.register_blueprint(course)
+    else:  # FIXME - Finish logic to process an upload.
+        f = request.files['filename']
+        f.save('/path/to/the/file')
 
 
 # Error handlers for HTTP status codes in the 4XX error-space
@@ -123,7 +70,7 @@ def bad_request(error):
 def unauthorized(error):
     return make_response(jsonify({'error': "HTTP status code: 401"}), 401)
 
-# @omnibus.errorhandler(402)
+# @omnibus.errorhandler(402) # FIXME - Test server won't run if this isn't commented out.
 # def payment_required(error):
 #     return make_response(jsonify({'error': "HTTP status code: 402"}), 402)
 
@@ -143,7 +90,7 @@ def method_not_allowed(error):
 def not_acceptable(error):
     return make_response(jsonify({'error': "HTTP status code: 406"}), 406)
 
-# @omnibus.errorhandler(407)
+# @omnibus.errorhandler(407) # FIXME - Test server won't run if this isn't commented out.
 # def proxy_authentication_required(error):
 #     return make_response(jsonify({'error': "HTTP status code: 407"}), 407)
 
@@ -191,7 +138,7 @@ def expectation_failed(error):
 def im_a_teapot(error):
     return make_response(jsonify({'error': "HTTP status code: 418"}), 418)
 
-# @omnibus.errorhandler(421)
+# @omnibus.errorhandler(421) # FIXME - Test server won't run if this isn't commented out.
 # def misdirected_request(error):
 #     return make_response(jsonify({'error': "HTTP status code: 421"}), 421)
 
@@ -203,11 +150,11 @@ def unprocessable_entity(error):
 def locked(error):
     return make_response(jsonify({'error': "HTTP status code: 423"}), 423)
 
-# @omnibus.errorhandler(424)
+# @omnibus.errorhandler(424) # FIXME - Test server won't run if this isn't commented out.
 # def failed_dependency(error):
 #     return make_response(jsonify({'error': "HTTP status code: 424"}), 424)
 
-# @omnibus.errorhandler(426)
+# @omnibus.errorhandler(426) # FIXME - Test server won't run if this isn't commented out.
 # def upgrade_required(error):
 #     return make_response(jsonify({'error': "HTTP status code: 426"}), 426)
 
@@ -230,23 +177,23 @@ def unavailable_for_legal_reasons(error):
 
 # Error handlers for HTTP status codes in an unofficial expansion of the 4XX error-space
 
-# @omnibus.errorhandler(444)
+# @omnibus.errorhandler(444) # FIXME - Test server won't run if this isn't commented out.
 # def no_response(error):
 #     return make_response(jsonify({'error': "Unofficial HTTP status code from Nginx: 444"}), 444)
 
-# @omnibus.errorhandler(495)
+# @omnibus.errorhandler(495) # FIXME - Test server won't run if this isn't commented out.
 # def ssl_certificate_error(error):
 #     return make_response(jsonify({'error': "Unofficial HTTP status code from Nginx: 495"}), 495)
 
-# @omnibus.errorhandler(496)
+# @omnibus.errorhandler(496) # FIXME - Test server won't run if this isn't commented out.
 # def ssl_certificate_required(error):
 #     return make_response(jsonify({'error': "Unofficial HTTP status code from Nginx: 496"}), 496)
 
-# @omnibus.errorhandler(497)
+# @omnibus.errorhandler(497) # FIXME - Test server won't run if this isn't commented out.
 # def http_request_sent_to_https_port(error):
 #     return make_response(jsonify({'error': "Unofficial HTTP status code from Nginx: 497"}), 497)
 
-# @omnibus.errorhandler(499)
+# @omnibus.errorhandler(499) # FIXME - Test server won't run if this isn't commented out.
 # def client_closed_request(error):
 #     return make_response(jsonify({'error': "Unofficial HTTP status code from Nginx: 499"}), 499)
 
@@ -277,22 +224,22 @@ def gateway_timeout(error):
 def http_version_not_supported(error):
     return make_response(jsonify({'error': "HTTP status code: 505"}), 505)
 
-# @omnibus.errorhandler(506)
+# @omnibus.errorhandler(506) # FIXME - Test server won't run if this isn't commented out.
 # def variant_also_negotiates(error):
 #     return make_response(jsonify({'error': "HTTP status code: 506"}), 506)
 
-# @omnibus.errorhandler(507)
+# @omnibus.errorhandler(507) # FIXME - Test server won't run if this isn't commented out.
 # def insufficient_storage(error):
 #     return make_response(jsonify({'error': "HTTP status code: 507"}), 507)
 
-# @omnibus.errorhandler(508)
+# @omnibus.errorhandler(508) # FIXME - Test server won't run if this isn't commented out.
 # def loop_detected(error):
 #     return make_response(jsonify({'error': "HTTP status code: 508"}), 508)
 
-# @omnibus.errorhandler(510)
+# @omnibus.errorhandler(510) # FIXME - Test server won't run if this isn't commented out.
 # def not_extended(error):
 #     return make_response(jsonify({'error': "HTTP status code: 510"}), 510)
 
-# @omnibus.errorhandler(511)
+# @omnibus.errorhandler(511) # FIXME - Test server won't run if this isn't commented out.
 # def network_authentication_required(error):
 #     return make_response(jsonify({'error': "HTTP status code: 511"}), 511)
