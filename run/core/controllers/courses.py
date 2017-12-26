@@ -15,7 +15,7 @@ from flask import(
                     url_for)
 
 
-bus = Blueprint('controller', __name__, url_prefix="/edchain/course")
+controller = Blueprint('controller', __name__, url_prefix="/edchain/course")
 
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # ##
@@ -25,14 +25,14 @@ bus = Blueprint('controller', __name__, url_prefix="/edchain/course")
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # ##
 #
 # # This takes a course number and returns an address for content hosted on IPFS
-# @bus.route('/content/addresses/<int:course_number>', methods=["GET"])
+# @controller.route('/content/addresses/<int:course_number>', methods=["GET"])
 # def get_content_addresses_by_course_number(course_number):
 #     with open('srv/{}/new.json'.format(course_number), "r") as file:
 #         document = json.load(file)
 #         return document[0]['hash']
 #
 # # This returns an arbitrary array of courses in lieu of a recommendation system
-# @bus.route('/content/addresses/featured', methods=["GET"])
+# @controller.route('/content/addresses/featured', methods=["GET"])
 # def get_content_addresses_for_featured_courses():
 #     with open('srv/featured/new.json', "r") as file:
 #         document = json.load(file)
@@ -45,7 +45,7 @@ bus = Blueprint('controller', __name__, url_prefix="/edchain/course")
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # ##
 
 
-@bus.route('/mit', methods=['GET'])
+@controller.route('/mit', methods=['GET'])
 def mit():
 
 	# Query-string parameters:
