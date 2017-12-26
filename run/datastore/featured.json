@@ -1,0 +1,40 @@
+{
+  "courses": [
+    {
+      "hash": "QmYE2WUtfeiLgBTqNj3LLTEFMKEmtFXSR1ZmukH2fmWUbW", 
+      "title": "Public Economics II"
+    }, 
+    {
+      "hash": "QmWNZ883wFHv7yxBp7CLTFYkkzxwHppZfmYUonw8g8xEUF", 
+      "title": "Technologies for Creative Learning"
+    }, 
+    {
+      "hash": "QmXFEJVrJV2Ho3xSmYPEb18sKZQaXmHMeFHvGbHntYbeBB", 
+      "title": "Atomic and Optical Physics I"
+    }, 
+    {
+      "hash": "QmTPz5cK2n7einYauCm7ksw2Ze7YMsypvU3Xf5kTkfrmgB", 
+      "title": "Scientific Visualization across Disciplines: A Critical Introduction"
+    }, 
+    {
+      "hash": "QmQsF868chhh6rkWp6dJicCLNT45qe7Ay6zgmg5wSGzGyH", 
+      "title": "Gateway: Planning Action"
+    }, 
+    {
+      "hash": "QmWJ3ZdKCHUp5sPzPAW4YpJp3SXvrmTR2v1hoPC1CsRo1d", 
+      "title": "Synaptic Plasticity and Memory, from Molecules to Behavior"
+    }, 
+    {
+      "hash": "QmXSYB3SQSnuUBqHKAgdAkhJrTyjmEXJiDz9y4YFdPufvr", 
+      "title": "Introduction to Western Music"
+    }, 
+    {
+      "hash": "QmesD5vnEtiGnxmiS185DHSLsNQihbZ5aCTdHehzh6er8U", 
+      "title": "Single Variable Calculus"
+    }, 
+    {
+      "hash": "QmQeTEiss8QhRR79iVJsw7XuN5BZLLz6gkLwyxFduoUA5d", 
+      "title": "Innovation in Military Organizations"
+    }
+  ]
+}
