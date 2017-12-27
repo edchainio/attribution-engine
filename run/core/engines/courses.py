@@ -12,7 +12,7 @@ controller = Blueprint('courses', __name__, url_prefix="/edchain/courses")
 
 @controller.route('/', methods=['GET','POST'])
 def get_courses():
-    with open('attributions/courses.json', 'r') as file:
+    with open('datastore/courses.json', 'r') as file:
         courses = json.load(file)['attributions']
         if request.method == 'GET':
             payload = request.args
