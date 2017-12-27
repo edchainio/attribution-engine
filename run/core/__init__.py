@@ -13,8 +13,8 @@ from flask import(
                     url_for)
 
 from core.extend            import authorize
-from core.engines.resources import controller as resources
-from core.engines.courses   import controller as courses
+from core.endpoints.resources import controller as resources
+from core.endpoints.courses   import controller as courses
 
 
 omnibus = Flask(__name__)
@@ -41,24 +41,12 @@ def authenticate():
     if request.method == 'GET':
         return render_template('authenticate.html')
     else:
-        pass # TODO - Write logic to evaluate credentials.
+        pass # TODO - Write log-in, and log-out, logic.
 
 @authorize
-@omnibus.route('/download', methods=['GET', 'POST'])
-def download():
-    if request.method == 'GET':
-        return render_template('download.html')
-    else:
-        pass # TODO - Write logic to process a download.
-
-@authorize
-@omnibus.route('/upload', methods=['GET', 'POST'])
-def upload():
-    if request.method == 'GET':
-        return render_template('upload.html')
-    else:  # TODO - Finish logic to process an upload.
-        f = request.files['filename']
-        f.save('/path/to/the/file')
+@omnibus.route('/dashboard', methods=['GET'])
+def dashboard():
+    return render_template('dashboard.html')
 
 
 # Error handlers for HTTP status codes in the 4XX error-space
