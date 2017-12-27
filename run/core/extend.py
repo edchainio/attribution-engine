@@ -9,11 +9,11 @@ from flask import(
                     url_for)
 
 
-def authorize(endpoint):
-    @wraps(endpoint)
+def authorize(function):
+    @wraps(function)
     def authorizing(*args, **kwargs):
         if g.username is None:
             flash(u'Please log-in.', 'error')
             return redirect(url_for('core.authenticate', next=request.path))
-        return endpoint(*args, **kwargs)
+        return function(*args, **kwargs)
     return authorizing
