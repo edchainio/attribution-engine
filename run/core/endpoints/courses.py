@@ -31,10 +31,10 @@ def get_courses():
             for course in courses:
                 for attribute in attributes:
                     if payload['{key}'.format(key=attribute)] == course['{key}'.format(key=attribute)]:
-                        if 'response_format' not in payload:
-                            attributions.append(course)
+                        if 'response_subtype' in payload:
+                            attributions.append(course['{key}'.format(key=payload['response_subtype'])])
                         else:
-                            attributions.append(course['{key}'.format(key=payload['response_format'])])
+                            attributions.append(course)
             if len(attributions) < 1:
                 response = {}
             elif len(attributions) == 1:
@@ -44,4 +44,7 @@ def get_courses():
                     response = {attribution['unique_identifier']:attribution for attribution in attributions}.values()
                 else:
                     response = set(attributions)
-            return jsonify(list(response))
+    if 'response_size' in payload:
+        return jsonify(list(response)[:int('{limit}'.format(limit=payload['response_size']))])
+    else:
+        return jsonify(list(response))
