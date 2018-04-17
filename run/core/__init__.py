@@ -8,6 +8,7 @@ import time
 from flask import(
                     Flask,
                     jsonify,
+                    make_response,
                     render_template,
                     request,
                     url_for)
@@ -15,11 +16,13 @@ from flask import(
 from core.extend            import authorize
 from core.endpoints.resources import controller as resources
 from core.endpoints.courses   import controller as courses
+from core.endpoints.mobile   import controller as mobile
 
 
 omnibus = Flask(__name__)
 omnibus.register_blueprint(resources)
 omnibus.register_blueprint(courses)
+omnibus.register_blueprint(mobile)
 
 def keymaker(broad, filename='secret_key'):
     filename = os.path.join(omnibus.instance_path, filename)

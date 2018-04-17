@@ -1,0 +1,541 @@
+{
+    "attribution":[
+       {
+          "course_number":"AFAM 162",
+          "course_date":"Spring 2010",
+          "course_name":"African American History: From Emancipation to the Present",
+          "course_department_urls":"https://oyc.yale.edu/african-american-studies",
+          "course_department":"African American Studies",
+          "course_page_urls":"https://oyc.yale.edu/african-american-studies/afam-162",
+          "instructor_name":"Jonathan Holloway",
+          "youtube_content": [
+            {
+                "id": 0,
+                "lecture_url": "https://www.youtube.com/watch?v=Fp6mjKumW2g&t=0s&index=1&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 1. Dawn of Freedom"
+            },
+            {
+                "id": 1,
+                "lecture_url": "https://www.youtube.com/watch?v=7nzjFpjA0cA&t=0s&index=2&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 2. Dawn of Freedom (continued)"
+            },
+            {
+                "id": 2,
+                "lecture_url": "https://www.youtube.com/watch?v=DM_KLxkPlG8&t=0s&index=3&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 3. Reconstruction"
+            },
+            {
+                "id": 3,
+                "lecture_url": "https://www.youtube.com/watch?v=yoFkuO2gfas&t=0s&index=4&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 4. Reconstruction (continued)"
+            },
+            {
+                "id": 4,
+                "lecture_url": "https://www.youtube.com/watch?v=73GYFVJ7LTM&t=0s&index=5&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 5. Uplift, Accommodation, and Assimilation"
+            },
+            {
+                "id": 5,
+                "lecture_url": "https://www.youtube.com/watch?v=qjkW5ZDPuYg&t=0s&index=6&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 6. Uplift, Accommodation, and Assimilation (continued)"
+            },
+            {
+                "id": 6,
+                "lecture_url": "https://www.youtube.com/watch?v=QBYTFbK4Ud0&t=0s&index=7&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 7. Migration and Urbanization"
+            },
+            {
+                "id": 7,
+                "lecture_url": "https://www.youtube.com/watch?v=OYpx82xbMsU&t=0s&index=8&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 8. Migration and Urbanization (continued)"
+            },
+            {
+                "id": 8,
+                "lecture_url": "https://www.youtube.com/watch?v=NAEjII_LXRU&t=0s&index=9&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 9. The New Negroes"
+            },
+            {
+                "id": 9,
+                "lecture_url": "https://www.youtube.com/watch?v=p2-7sx4AjEo&t=0s&index=10&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 10. The New Negroes (continued)"
+            },
+            {
+                "id": 10,
+                "lecture_url": "https://www.youtube.com/watch?v=ItCx2M-RoSU&t=0s&index=11&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 11. Depression and Double V"
+            },
+            {
+                "id": 11,
+                "lecture_url": "https://www.youtube.com/watch?v=TrbEIQeqZtw&t=0s&index=12&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 12. Depression and Double V (continued)"
+            },
+            {
+                "id": 12,
+                "lecture_url": "https://www.youtube.com/watch?v=dbtxSwg1fCc&t=0s&index=13&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 13. The Road to Brown and Little Rock"
+            },
+            {
+                "id": 13,
+                "lecture_url": "https://www.youtube.com/watch?v=HsZ8wlviG7Q&t=0s&index=14&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 14. From Sit-Ins to Civil Rights"
+            },
+            {
+                "id": 14,
+                "lecture_url": "https://www.youtube.com/watch?v=Apuf3_qHe8I&t=0s&index=15&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 15. From Sit-Ins to Civil Rights (continued)"
+            },
+            {
+                "id": 15,
+                "lecture_url": "https://www.youtube.com/watch?v=IknW1g8iKM8&t=0s&index=16&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 16. From Voting Rights to Watts"
+            },
+            {
+                "id": 16,
+                "lecture_url": "https://www.youtube.com/watch?v=-59EuVvNfLM&t=0s&index=17&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 17. From Voting Rights to Watts (continued)"
+            },
+            {
+                "id": 17,
+                "lecture_url": "https://www.youtube.com/watch?v=uv4yz1v8lIA&t=0s&index=18&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 18. Black Power"
+            },
+            {
+                "id": 18,
+                "lecture_url": "https://www.youtube.com/watch?v=Mh4GgTkh53I&t=0s&index=19&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 19. Black Power (continued)"
+            },
+            {
+                "id": 19,
+                "lecture_url": "https://www.youtube.com/watch?v=Ia8vmXoxVdI&t=0s&index=20&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 20. The Politics of Gender and Culture"
+            },
+            {
+                "id": 20,
+                "lecture_url": "https://www.youtube.com/watch?v=BzoB6jH4CcU&t=0s&index=21&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 21. The Politics of Gender and Culture (continued)"
+            },
+            {
+                "id": 21,
+                "lecture_url": "https://www.youtube.com/watch?v=b4cOAX7S0FU&t=0s&index=22&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 22 - Public Policy and Presidential Politics"
+            },
+            {
+                "id": 22,
+                "lecture_url": "https://www.youtube.com/watch?v=d8OIMERZYoU&t=0s&index=23&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 23. Public Policy and Presidential Politics (continued)"
+            },
+            {
+                "id": 23,
+                "lecture_url": "https://www.youtube.com/watch?v=l6l_Id1UuqA&t=0s&index=24&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 24. Who Speaks for the Race?"
+            },
+            {
+                "id": 24,
+                "lecture_url": "https://www.youtube.com/watch?v=jY_bSlVsyxM&t=0s&index=25&list=PLh9mgdi4rNeyqnC6Gj5VCZERhhy9CC1S6",
+                "lecture_title": " 25. Who Speaks for the Race? (continued)"
+            }
+        ]
+    },
+       {
+          "course_number":"AMST 246",
+          "course_date":"Fall 2011",
+          "course_name":"Hemingway, Fitzgerald, Faulkner",
+          "course_department_urls":"https://oyc.yale.edu/american-studies",
+          "course_department":"American Studies",
+          "course_page_urls":"https://oyc.yale.edu/american-studies/amst-246",
+          "instructor_name":"Wai Chee Dimock",
+          "youtube_content": [
+            {
+                "lecture_title": "Introduction",
+                "lecture_url": "https://www.youtube.com/watch?v=0GLy6_gjenA&list=PL84C3A4DD9C263D79&index=1&t=0s",
+                "id": 0
+            },
+            {
+                "lecture_title": "Hemingway's In Our Time",
+                "lecture_url": "https://www.youtube.com/watch?v=FOF8vYkg0MI&list=PL84C3A4DD9C263D79&index=2&t=0s",
+                "id": 1
+            },
+            {
+                "lecture_title": "Hemingway's In Our Time, Part II",
+                "lecture_url": "https://www.youtube.com/watch?v=hu3rv7nSIKY&list=PL84C3A4DD9C263D79&index=3&t=0s",
+                "id": 2
+            },
+            {
+                "lecture_title": "Fitzgerald's The Great Gatsby",
+                "lecture_url": "https://www.youtube.com/watch?v=f6CsjHh0n8E&list=PL84C3A4DD9C263D79&index=4&t=0s",
+                "id": 3
+            },
+            {
+                "lecture_title": "Fitzgerald's The Great Gatsby, Part II",
+                "lecture_url": "https://www.youtube.com/watch?v=06ernhU235g&list=PL84C3A4DD9C263D79&index=5&t=0s",
+                "id": 4
+            },
+            {
+                "lecture_title": "Faulkner's The Sound and the Fury",
+                "lecture_url": "https://www.youtube.com/watch?v=tjEf3Atnrvk&list=PL84C3A4DD9C263D79&index=6&t=0s",
+                "id": 5
+            },
+            {
+                "lecture_title": "Faulkner's The Sound and the Fury, Part II",
+                "lecture_url": "https://www.youtube.com/watch?v=LoRbEoCUrAY&list=PL84C3A4DD9C263D79&index=7&t=0s",
+                "id": 6
+            },
+            {
+                "lecture_title": "Faulkner's The Sound and the Fury, Part III",
+                "lecture_url": "https://www.youtube.com/watch?v=8-XxWyFIK6A&list=PL84C3A4DD9C263D79&index=8&t=0s",
+                "id": 7
+            },
+            {
+                "lecture_title": "Faulkner's The Sound and the Fury, Part IV",
+                "lecture_url": "https://www.youtube.com/watch?v=DlbKjsht-1Q&list=PL84C3A4DD9C263D79&index=9&t=0s",
+                "id": 8
+            },
+            {
+                "lecture_title": "Hemingway -- To Have and Have Not",
+                "lecture_url": "https://www.youtube.com/watch?v=ia6xFuVBsGk&list=PL84C3A4DD9C263D79&index=10&t=0s",
+                "id": 9
+            },
+            {
+                "lecture_title": "Hemingway -- To Have and Have Not",
+                "lecture_url": "https://www.youtube.com/watch?v=VJTSDLOS5QM&list=PL84C3A4DD9C263D79&index=11&t=0s",
+                "id": 10
+            },
+            {
+                "lecture_title": "Fitzgerald -- \"The Diamond as Big as the Ritz\", etc.",
+                "lecture_url": "https://www.youtube.com/watch?v=Hcz8yHjmSTw&list=PL84C3A4DD9C263D79&index=12&t=0s",
+                "id": 11
+            },
+            {
+                "lecture_title": "Faulkner -- As I Lay Dying",
+                "lecture_url": "https://www.youtube.com/watch?v=ax1QzmclDT0&list=PL84C3A4DD9C263D79&index=13&t=0s",
+                "id": 12
+            },
+            {
+                "lecture_title": "Faulkner -- As I Lay Dying, Part II",
+                "lecture_url": "https://www.youtube.com/watch?v=Qx6U4lB-FgA&list=PL84C3A4DD9C263D79&index=14&t=0s",
+                "id": 13
+            },
+            {
+                "lecture_title": "Faulkner -- As I Lay Dying",
+                "lecture_url": "https://www.youtube.com/watch?v=PoZfBpjS_zs&list=PL84C3A4DD9C263D79&index=15&t=0s",
+                "id": 14
+            },
+            {
+                "lecture_title": "Hemingway -- For Whom the Bell Tolls",
+                "lecture_url": "https://www.youtube.com/watch?v=KKqRwipbWMY&list=PL84C3A4DD9C263D79&index=16&t=0s",
+                "id": 15
+            },
+            {
+                "lecture_title": "Hemingway -- For Whom the Bell Tolls",
+                "lecture_url": "https://www.youtube.com/watch?v=HcXzyezCqxE&list=PL84C3A4DD9C263D79&index=17&t=0s",
+                "id": 16
+            },
+            {
+                "lecture_title": "Hemingway -- For Whom the Bell Tolls (continued)",
+                "lecture_url": "https://www.youtube.com/watch?v=UHL7DTt7JpE&list=PL84C3A4DD9C263D79&index=18&t=0s",
+                "id": 17
+            },
+            {
+                "lecture_title": "Hemingway -- For Whom the Bell Tolls (continued)",
+                "lecture_url": "https://www.youtube.com/watch?v=Ym-vXiIDz_M&list=PL84C3A4DD9C263D79&index=19&t=0s",
+                "id": 18
+            },
+            {
+                "lecture_title": "Fitzgerald - Tender Is the Night",
+                "lecture_url": "https://www.youtube.com/watch?v=vJ-ZcyTKpV8&list=PL84C3A4DD9C263D79&index=20&t=0s",
+                "id": 19
+            },
+            {
+                "lecture_title": "Fitzgerald, Tender is the Night (continued)",
+                "lecture_url": "https://www.youtube.com/watch?v=PcK0GlkMmYQ&list=PL84C3A4DD9C263D79&index=21&t=0s",
+                "id": 20
+            },
+            {
+                "lecture_title": "Faulkner, Light in August",
+                "lecture_url": "https://www.youtube.com/watch?v=llFgdkjpgc4&list=PL84C3A4DD9C263D79&index=22&t=0s",
+                "id": 21
+            },
+            {
+                "lecture_title": "Faulkner, Light in August (continued)",
+                "lecture_url": "https://www.youtube.com/watch?v=2oM2mBp7dBM&list=PL84C3A4DD9C263D79&index=23&t=0s",
+                "id": 22
+            },
+            {
+                "lecture_title": "Faulkner, Light in August (continued)",
+                "lecture_url": "https://www.youtube.com/watch?v=1ZS6tDMukGw&list=PL84C3A4DD9C263D79&index=24&t=0s",
+                "id": 23
+            },
+            {
+                "lecture_title": "Faulkner, Light in August (continued)",
+                "lecture_url": "https://www.youtube.com/watch?v=WO7n1WG6BkU&list=PL84C3A4DD9C263D79&index=25&t=0s",
+                "id": 24
+            }
+        ]
+    },
+       {
+          "course_number":"ASTR 160",
+          "course_date":"Spring 2007",
+          "course_name":"Frontiers and Controversies in Astrophysics",
+          "course_department_urls":"https://oyc.yale.edu/astronomy",
+          "course_department":"Astronomy",
+          "course_page_urls":"https://oyc.yale.edu/astronomy/astr-160",
+          "instructor_name":"Charles Bailyn",
+          "youtube_content": [
+            {
+                "lecture_title": "Introduction",
+                "lecture_url": "https://www.youtube.com/watch?v=nzmFc2gjUo4&t=0s&index=1&list=PLD1515420F4E601A4",
+                "id": 0
+            },
+            {
+                "lecture_title": "Planetary Orbits",
+                "lecture_url": "https://www.youtube.com/watch?v=ZiK4lg3Tzfs&t=0s&index=2&list=PLD1515420F4E601A4",
+                "id": 1
+            },
+            {
+                "lecture_title": "Our Solar System and the Pluto Problem",
+                "lecture_url": "https://www.youtube.com/watch?v=psGVZRhemCg&t=0s&index=3&list=PLD1515420F4E601A4",
+                "id": 2
+            },
+            {
+                "lecture_title": "Discovering Exoplanets: Hot Jupiters",
+                "lecture_url": "https://www.youtube.com/watch?v=wxZ4cOxQqMQ&t=0s&index=4&list=PLD1515420F4E601A4",
+                "id": 3
+            },
+            {
+                "lecture_title": "Planetary Transits",
+                "lecture_url": "https://www.youtube.com/watch?v=aXvkfXcBLzk&t=0s&index=5&list=PLD1515420F4E601A4",
+                "id": 4
+            },
+            {
+                "lecture_title": "Microlensing, Astrometry and Other Methods",
+                "lecture_url": "https://www.youtube.com/watch?v=r7QJyOYnmXs&t=0s&index=6&list=PLD1515420F4E601A4",
+                "id": 5
+            },
+            {
+                "lecture_title": "Direct Imaging of Exoplanets",
+                "lecture_url": "https://www.youtube.com/watch?v=dVvYa138qJE&t=0s&index=7&list=PLD1515420F4E601A4",
+                "id": 6
+            },
+            {
+                "lecture_title": "Introduction to Black Holes",
+                "lecture_url": "https://www.youtube.com/watch?v=1UeSeRpGYoo&t=0s&index=8&list=PLD1515420F4E601A4",
+                "id": 7
+            },
+            {
+                "lecture_title": "Special and General Relativity",
+                "lecture_url": "https://www.youtube.com/watch?v=D6fXiW3oEws&t=0s&index=9&list=PLD1515420F4E601A4",
+                "id": 8
+            },
+            {
+                "lecture_title": "Tests of Relativity",
+                "lecture_url": "https://www.youtube.com/watch?v=dII3mcnwycs&t=0s&index=10&list=PLD1515420F4E601A4",
+                "id": 9
+            },
+            {
+                "lecture_title": "Special and General Relativity (cont.)",
+                "lecture_url": "https://www.youtube.com/watch?v=9Gz-MyUGF7k&t=0s&index=11&list=PLD1515420F4E601A4",
+                "id": 10
+            },
+            {
+                "lecture_title": "Stellar Mass Black Holes",
+                "lecture_url": "https://www.youtube.com/watch?v=rIUxvzJzPYw&t=0s&index=12&list=PLD1515420F4E601A4",
+                "id": 11
+            },
+            {
+                "lecture_title": "Stellar Mass Black Holes (cont.)",
+                "lecture_url": "https://www.youtube.com/watch?v=hMgBUcP6RBc&t=0s&index=13&list=PLD1515420F4E601A4",
+                "id": 12
+            },
+            {
+                "lecture_title": "Pulsars",
+                "lecture_url": "https://www.youtube.com/watch?v=OJwlgdgC3s0&t=0s&index=14&list=PLD1515420F4E601A4",
+                "id": 13
+            },
+            {
+                "lecture_title": "Supermassive Black Holes",
+                "lecture_url": "https://www.youtube.com/watch?v=IlcE7QwGoMU&t=0s&index=15&list=PLD1515420F4E601A4",
+                "id": 14
+            },
+            {
+                "lecture_title": "Hubble's Law and the Big Bang",
+                "lecture_url": "https://www.youtube.com/watch?v=4Jsr_24D6Eo&t=0s&index=16&list=PLD1515420F4E601A4",
+                "id": 15
+            },
+            {
+                "lecture_title": "Hubble's Law and the Big Bang (cont.)",
+                "lecture_url": "https://www.youtube.com/watch?v=7Lz-Lj5sa3I&t=0s&index=17&list=PLD1515420F4E601A4",
+                "id": 16
+            },
+            {
+                "lecture_title": "Hubble's Law and the Big Bang (cont.)",
+                "lecture_url": "https://www.youtube.com/watch?v=E9bjdR_k5qg&t=0s&index=18&list=PLD1515420F4E601A4",
+                "id": 17
+            },
+            {
+                "lecture_title": "Omega and the End of the Universe",
+                "lecture_url": "https://www.youtube.com/watch?v=UaD1a25gbxk&t=0s&index=19&list=PLD1515420F4E601A4",
+                "id": 18
+            },
+            {
+                "lecture_title": "Dark Matter",
+                "lecture_url": "https://www.youtube.com/watch?v=QF1Lcx1ciTE&t=0s&index=20&list=PLD1515420F4E601A4",
+                "id": 19
+            },
+            {
+                "lecture_title": "Dark Energy and the Accelerating Universe and the Big Rip",
+                "lecture_url": "https://www.youtube.com/watch?v=40OQdPbeM0c&t=0s&index=21&list=PLD1515420F4E601A4",
+                "id": 20
+            },
+            {
+                "lecture_title": "Supernovae",
+                "lecture_url": "https://www.youtube.com/watch?v=LME94GCyD4Y&t=0s&index=22&list=PLD1515420F4E601A4",
+                "id": 21
+            },
+            {
+                "lecture_title": "Other Constraints: The Cosmic Microwave Background",
+                "lecture_url": "https://www.youtube.com/watch?v=Jgoyk2UzgEA&t=0s&index=23&list=PLD1515420F4E601A4",
+                "id": 22
+            },
+            {
+                "lecture_title": "The Multiverse and Theories of Everything",
+                "lecture_url": "https://www.youtube.com/watch?v=YAxwmiKrjgU&t=0s&index=24&list=PLD1515420F4E601A4",
+                "id": 23
+            }
+        ]
+    },
+       {
+          "course_number":"Beng 100",
+          "course_date":"Spring 2008",
+          "course_name":"Frontiers of Biomedical Engineering",
+          "course_department_urls":"https://oyc.yale.edu/biomedical-engineering",
+          "course_department":"Biomedical Engineering",
+          "course_page_urls":"https://oyc.yale.edu/biomedical-engineering/beng-100",
+          "instructor_name":"W. Mark Saltzman",
+          "youtube_content": [
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=Sn0bOX5Hau4&index=1&list=PL27E877E8206F196B&t=0s",
+                "id": 0,
+                "lecture_title": "What Is Biomedical Engineering?"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=mRu9SDMWn2g&index=2&list=PL27E877E8206F196B&t=0s",
+                "id": 1,
+                "lecture_title": "What Is Biomedical Engineering? (cont.)"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=WXGL2Kracgs&index=3&list=PL27E877E8206F196B&t=0s",
+                "id": 2,
+                "lecture_title": "Genetic Engineering"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=uUddHabtAzk&index=4&list=PL27E877E8206F196B&t=0s",
+                "id": 3,
+                "lecture_title": "Genetic Engineering (cont.)"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=_p2t_d1XsZU&index=5&list=PL27E877E8206F196B&t=0s",
+                "id": 4,
+                "lecture_title": "Cell Culture Engineering"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=H-9WOH2dY9I&index=6&list=PL27E877E8206F196B&t=0s",
+                "id": 5,
+                "lecture_title": "Cell Culture Engineering (cont.)"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=jEhTHnRoy5g&index=7&list=PL27E877E8206F196B&t=0s",
+                "id": 6,
+                "lecture_title": "Cell Communication and Immunology"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=1i3EBoC7XXY&index=8&list=PL27E877E8206F196B&t=0s",
+                "id": 7,
+                "lecture_title": "Cell Communication and Immunology (cont.)"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=AQ8N7npwbkU&index=9&list=PL27E877E8206F196B&t=0s",
+                "id": 8,
+                "lecture_title": "Biomolecular Engineering: Engineering of Immunity"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=yIguafqvrVU&index=10&list=PL27E877E8206F196B&t=0s",
+                "id": 9,
+                "lecture_title": "Biomolecular Engineering: Engineering of Immunity (cont.)"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=OZn_7gJ6LnY&index=11&list=PL27E877E8206F196B&t=0s",
+                "id": 10,
+                "lecture_title": "Biomolecular Engineering: General Concepts"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=7IgMl_-XYks&index=12&list=PL27E877E8206F196B&t=0s",
+                "id": 11,
+                "lecture_title": "Biomolecular Engineering: General Concepts (cont.)"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=It_cV56Dxtk&index=13&list=PL27E877E8206F196B&t=0s",
+                "id": 12,
+                "lecture_title": "Cardiovascular Physiology"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=aavVN9rPGWc&index=14&list=PL27E877E8206F196B&t=0s",
+                "id": 13,
+                "lecture_title": "Cardiovascular Physiology (cont.)"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=nzIvB0BUc6c&index=15&list=PL27E877E8206F196B&t=0s",
+                "id": 14,
+                "lecture_title": "Cardiovascular Physiology (cont.)"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=XZMB-aoIi4A&index=16&list=PL27E877E8206F196B&t=0s",
+                "id": 15,
+                "lecture_title": "Renal Physiology"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=hznvgN1Wnfw&index=17&list=PL27E877E8206F196B&t=0s",
+                "id": 16,
+                "lecture_title": "Renal Physiology (cont.)"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=dMZhxNfOYy0&index=18&list=PL27E877E8206F196B&t=0s",
+                "id": 17,
+                "lecture_title": "Biomechanics and Orthopedics"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=ancxWb9FoY8&index=19&list=PL27E877E8206F196B&t=0s",
+                "id": 18,
+                "lecture_title": "Biomechanics and Orthopedics (cont.)"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=U8Dx2BZimOg&index=20&list=PL27E877E8206F196B&t=0s",
+                "id": 19,
+                "lecture_title": "Bioimaging"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=zsb6B8HrNVA&index=21&list=PL27E877E8206F196B&t=0s",
+                "id": 20,
+                "lecture_title": "Bioimaging (cont.)"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=lKKZjKCqSIc&index=22&list=PL27E877E8206F196B&t=0s",
+                "id": 21,
+                "lecture_title": "Tissue Engineering"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=u6is0onylyw&index=23&list=PL27E877E8206F196B&t=0s",
+                "id": 22,
+                "lecture_title": "Tissue Engineering (cont.)"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=Pb20yJNIrzg&index=24&list=PL27E877E8206F196B&t=0s",
+                "id": 23,
+                "lecture_title": "Biomedical Engineers and Cancer"
+            },
+            {
+                "lecture_url": "https://www.youtube.com/watch?v=yecsqtQbKU8&index=25&list=PL27E877E8206F196B&t=0s",
+                "id": 24,
+                "lecture_title": "Biomedical Engineers and Artificial Organs"
+            }
+        ]
+       }

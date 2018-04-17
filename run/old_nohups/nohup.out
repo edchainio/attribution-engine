@@ -1,0 +1,7 @@
+ * Running on http://0.0.0.0:9005/ (Press CTRL+C to quit)
+206.252.214.165 - - [23/Feb/2018 18:05:49] "POST /edchain/courses/ HTTP/1.1" 200 -
+54.174.114.150 - - [23/Feb/2018 18:06:48] "GET /edchain/courses/ HTTP/1.1" 200 -
+206.252.214.165 - - [24/Feb/2018 00:19:06] "POST /edchain/courses/ HTTP/1.1" 200 -
+206.252.214.165 - - [24/Feb/2018 00:20:41] "POST /edchain/courses/ HTTP/1.1" 200 -
+206.252.214.165 - - [24/Feb/2018 00:29:29] "POST /edchain/courses/ HTTP/1.1" 200 -
+206.252.214.165 - - [24/Feb/2018 00:42:43] "POST /edchain/courses/ HTTP/1.1" 200 -

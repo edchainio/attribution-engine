@@ -12,17 +12,19 @@ controller = Blueprint('courses', __name__, url_prefix="/edchain/courses")
 
 @controller.route('/', methods=['GET','POST'])
 def get_courses():
-    with open('datastore/courses.json', 'r') as file:
+    with open('datastore/searchspace7.json', 'r') as file:
         courses = json.load(file)['attributions']
         if request.method == 'GET':
             payload = request.args
         else:
             payload = request.get_json(silent=True)
-        if len(payload) < 1:
+        if payload is None:
+            return jsonify(list({}))
+        elif len(payload) < 1:
             return jsonify(courses)
         else:
             # TODO - The following logic should be broken-up into handlers, services, and finders.
-            keys = ['content_address', 'copyright_holder', 'course_title', 'instructor_name', 'publication_date', 'subject_matter', 'unique_identifier']
+            keys = ['content_address', 'copyright_holder', 'course_title', 'instructor_name', 'publication_date', 'subject_matter', 'unique_identifier', 'deep_link']
             attributes = []
             for key in payload:
                 if key in keys:
@@ -30,7 +32,7 @@ def get_courses():
             attributions = []
             for course in courses:
                 for attribute in attributes:
-                    if payload['{key}'.format(key=attribute)] == course['{key}'.format(key=attribute)]:
+                    if course['{key}'.format(key=attribute)] == payload['{key}'.format(key=attribute)]:
                         if 'response_subtype' in payload:
                             attributions.append(course['{key}'.format(key=payload['response_subtype'])])
                         else:
@@ -44,7 +46,7 @@ def get_courses():
                     response = {attribution['unique_identifier']:attribution for attribution in attributions}.values()
                 else:
                     response = set(attributions)
-    if 'response_size' in payload:
-        return jsonify(list(response)[:int('{limit}'.format(limit=payload['response_size']))])
-    else:
-        return jsonify(list(response))
+        if 'response_size' in payload:
+            return jsonify(list(response)[:int('{limit}'.format(limit=payload['response_size'])[0])])
+        else:
+            return jsonify(list(response))
